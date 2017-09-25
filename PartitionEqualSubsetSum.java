@@ -2,8 +2,8 @@
  * 416. Partition Equal Subset Sum
  * Given a non-empty array containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.
  * Note:
- * 		1. Each of the array element will not exceed 100.
- * 		2. The array size will not exceed 200.
+ * 	1. Each of the array element will not exceed 100.
+ * 	2. The array size will not exceed 200.
  * 
  * Example 1:
  * Input: [1, 5, 11, 5]
@@ -23,7 +23,6 @@ public class PartitionEqualSubsetSum {
 	static int input[] = {1, 3, 5, 5, 2, 1, 1, 6, 3, 3};
 	
 	static int totalSum=0;
-	
 	static int partitionSum = 0;
 
 	public static void main(String[] args) {
@@ -47,7 +46,6 @@ public class PartitionEqualSubsetSum {
 		partitionSum=totalSum/2;
 		
 		boolean arr[][]=new boolean[input.length+1][partitionSum+1];
-		
 		
 		for(int i=0;i<arr.length;i++)
 		{
@@ -75,7 +73,6 @@ public class PartitionEqualSubsetSum {
 		}
 		
 		return arr[input.length][partitionSum];
-		
 	}
 
 	private static void retrieveSubset(boolean arr[][]) {
@@ -107,5 +104,4 @@ public class PartitionEqualSubsetSum {
 			totalSum+=input[i];
 		}
 	}
-
 }
