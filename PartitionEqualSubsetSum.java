@@ -16,7 +16,7 @@
  * Explanation: The array cannot be partitioned into equal sum subsets.
  */
 
-//Code:
+Code:
 
 public class PartitionEqualSubsetSum {
 	
